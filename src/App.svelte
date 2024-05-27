@@ -32,12 +32,12 @@
     </HeroHeader>
 
     <div class="flex flex-col mb-8 lg:mb-16 space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
-        <a href="/">
+        <a href="#about">
             <Button size="lg" color="red">
                 Conocer mas <ArrowRightOutline size="md" class="ml-2 -mr-1" />
             </Button>
         </a>
-        <a href="/">
+        <a href="#contacto">
             <Button size="lg" color="light">Contactanos</Button>
         </a>
     </div>
