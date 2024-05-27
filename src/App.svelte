@@ -13,8 +13,7 @@
 
 <Navbar>
     <NavBrand href="/">
-        <!-- <img src="/images/flowbite-svelte-icon-logo.svg" class="me-3 h-6 sm:h-9" alt="Flowbite Logo" /> -->
-        <span class="self-center whitespace-nowrap text-xl font-semibold dark:text-white">PET EAT</span>
+        <img src="/logo.png" class="me-0 h-10" alt="" />
     </NavBrand>
     <NavHamburger />
     <NavUl>
@@ -118,17 +117,19 @@
         <form class="space-y-8">
             <div>
                 <Label for="subject" class="block mb-2">Tu nombre</Label>
-                <Input  bind:value={name} id="subject" name="subject" placeholder="" required />
+                <Input bind:value={name} id="subject" name="subject" placeholder="" required />
             </div>
             <div>
                 <Textarea bind:value={message} id="subject" name="subject" placeholder="Tu mensaje..." label="Your message" />
             </div>
-            <a href={`mailto:bladimir.leyva@uabc.edu.mx?subject=Mensaje de ${name}&body=${message}`}>
-                <Button>Mandar correo</Button>
-            </a>
-            <a href={`https://wa.me/526645613973?text=Mensaje de: ${name} -- ${message}`}>
-                <Button>Mandar whatsapp</Button>
-            </a>
+            <div class="flex gap-2">
+                <a href={`mailto:bladimir.leyva@uabc.edu.mx?subject=Mensaje de ${name}&body=${message}`}>
+                    <Button>Mandar correo</Button>
+                </a>
+                <a href={`https://wa.me/526645613973?text=Mensaje de: ${name} -- ${message}`}>
+                    <Button>Mandar whatsapp</Button>
+                </a>
+            </div>
         </form>
     </Contact>
 </Section>
